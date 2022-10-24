@@ -1,0 +1,128 @@
+<body>
+  
+<div class="container">
+    <div class="row">
+      <div class="offset-lg-2 col-lg-8 col-sm-8 col-8 border rounded main-section">
+        <h3 class="text-center text-inverse">Form Validation</h3>
+        <hr>
+        <form class="container" id="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12">
+               <div class="form-group">
+                <label for="flightno">Flight No</label>
+                <input class="form-control" type="text" name="flightNo" [(ngModel)]="flight.flightNo" required>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="source">From</label>
+                <input class="form-control" type="text" name="source"  [(ngModel)]="flight.source"required>
+              </div>  
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12">
+               <div class="form-group">
+                <label for="destination">To</label>
+                <input class="form-control" type="text" name="destination" id=""  [(ngModel)]="flight.destination"required>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="departuretime">departure date</label>
+                <input class="form-control" type="date" name="departure_time" id=""  [(ngModel)]="flight.departure_date"required>
+              </div>  
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12">
+               <div class="form-group">
+                <label for="arrivaltime">Arrivel date</label>
+                <input class="form-control" type="date" name="arrival_date" id=""  [(ngModel)]="flight.arrival_date"required>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="duration">departure Time</label>
+                <input class="form-control" type="time" name="departure_time" id=""  [(ngModel)]="flight.departure_time" required>
+              </div>  
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12">
+               <div class="form-group">
+                <label for="arrivaltime">Arrivel Time</label>
+                <input class="form-control" type="time" name="arrival_time" id=""  [(ngModel)]="flight.arrival_time" required>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="duration">duration</label>
+                <input class="form-control" type="text" name="duration" id=""  [(ngModel)]="flight.flight_duration" required>
+              </div>  
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12">
+               <div class="form-group">
+                <label for="ecomonySeat">no of seats in economy class</label>
+                <input class="form-control" type="text" name="ecomonySeat" id="value1"  [(ngModel)]="flight.ecomonySeat" required>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="businessSeat">no of seats in business class</label>
+                <input class="form-control" type="text" name="businessSeat" id="value2"  [(ngModel)]="flight.businessSeat" required>
+              </div>  
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12">
+               <div class="form-group">
+                <label for="duration">economy class price</label>
+                <input class="form-control" type="text" name="duration"  [(ngModel)]="flight.ecomonyPrice" required>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12">
+              <div class="form-group">
+                <label for="businessPrice">business class price</label>
+                <input class="form-control" type="text" name="businessPrice"  [(ngModel)]="flight.businessPrice" required>
+              </div>  
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12">
+               <div class="form-group">
+                <label for="availableseat">available Seat</label>
+                <input class="form-control" type="text" name="availableSeat" id="sum"  [(ngModel)]="flight.availableSeat" required>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12">
+              <div class="form-group">
+                
+              </div>
+            </div>
+          </div>
+
+          
+
+
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 col-12 text-center">
+              <button class="btn btn-primary" (click)="addFlight()" type="submit" >
+               Add </button>
+            </div>
+          </div>  
+        </form>
+      </div>
+    </div>  
+</div>
+
+
+</body>
